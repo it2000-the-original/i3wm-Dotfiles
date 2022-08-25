@@ -1,0 +1,3 @@
+#!/bin/bash
+killall rofi
+i3lock --color "#0f0f0f"
