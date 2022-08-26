@@ -22,7 +22,7 @@ this repository include configurations for:
 You need to install the dependency packages to install this config (Is planned that you have already an i3 session installed.
 
 ```
-sudo pacman -S i3-gaps rofi dunst feh mpv i3blocks picom neovim nemo cinnamon translations network-manager-applet blueman xss-lock ttf-fira-code nerd-fonts-fira-code python python-pip pacman-contrib brightnessctl acpi pulseaudio alsa
+sudo pacman -S i3-gaps rofi dunst feh mpv i3blocks picom neovim nemo cinnamon translations network-manager-applet blueman xss-lock ttf-fira-code nerd-fonts-fira-code python python-pip pacman-contrib brightnessctl acpi pulseaudio alsa polkit polkit-gnome
 pip install pynvim
 ```
 
