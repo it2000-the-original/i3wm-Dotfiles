@@ -1,5 +1,10 @@
 #!/bin/sh
 
+#creating backupfiles directory
+mkdir -p backupfiles/user/.local/share
+mkdir -p backupfiles/user/.config
+mkdir -p backupfiles/system/etc/systemd
+
 #copy the backup files in the backufiles folder
 echo "copyng backup files..."
 cp -rf ~/.local/share/nvim backupfiles/user/.local/share
