@@ -26,5 +26,5 @@ cp -rf /etc/systemd/logind.conf backupfiles/system/etc/systemd
 #installation phase
 echo "copyng rice files..."
 sudo cp -rf system-files/* /
-cp -rf user-files/* ~/
+cp -rf user-files/. ~/
 echo "installation complete now reboot or logout"
