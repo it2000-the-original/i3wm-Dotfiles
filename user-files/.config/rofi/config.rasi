@@ -1,0 +1,19 @@
+//@theme "/usr/share/rofi/themes/Monokai.rasi"
+//@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+//@theme "/home/it2000/.local/share/rofi/themes/graphite.rasi"
+@import "/home/it2000/.local/share/rofi/themes/graphite.rasi"
+//@theme "/home/it2000/.local/share/rofi/themes/test.rasi"
+
+configuration {
+
+	display-drun: "Applications:";
+	display-window: "Window:";
+	icon-theme: "Tela-grey-dark";
+	font: "Fira Code Medium 9";
+	terminal: "gnome-terminal";
+}
+
+element-icon { 
+
+	size: 20;
+}
