@@ -20,43 +20,43 @@ mkdir -p backupfiles/system/etc/systemd
 #copy the backup files in the backufiles folder
 echo "copyng backup files..."
 
-if [-d "$dunst"]; then
+if [ -d "$dunst" ]; then
     cp -rf ~/.config/dunst backupfiles/user/.config
 fi
 
-if [-d "$feh"]; then
+if [ -d "$feh" ]; then
     cp -rf ~/.config/feh backupfiles/user/.config
 fi
 
-if [-d "$i3"]; then
+if [ -d "$i3" ]; then
     cp -rf ~/.config/i3 backupfiles/user/.config
 fi
 
-if [-d "$i3blocks"]; then
+if [ -d "$i3blocks" ]; then
     cp -rf ~/.config/i3blocks backupfiles/user/.config
 fi
 
-if [-d "$mpv"]; then
+if [ -d "$mpv" ]; then
     cp -rf ~/.config/mpv backupfiles/user/.config
 fi
 
-if [-d "$nvim"]; then
+if [ -d "$nvim" ]; then
     cp -rf ~/.config/nvim backupfiles/user/.config
 fi
 
-if [-d "$picom"]; then
+if [ -d "$picom" ]; then
     cp -rf ~/.config/picom backupfiles/user/.config
 fi
 
-if [-d "$gtk3"]; then
+if [ -d "$gtk3" ]; then
     cp -rf ~/.config/gtk-3.0 backupfiles/user/.config
 fi
 
-if [-d "$gtk4"]; then
+if [ -d "$gtk4" ]; then
     cp -rf ~/.config/gtk-4.0 backupfiles/user/.config
 fi
 
-if [-f "$gtk2"]; then
+if [ -f "$gtk2" ]; then
     cp -rf ~/.gtkrc-2.0 backupfiles/user
 fi
 
