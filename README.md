@@ -19,7 +19,7 @@ this repository include configurations for:
 
 ## Install Dependencies
 
-You need to install the dependency packages to install this config (Is planned that you have installed yay).
+You need to install the dependency packages to install this config (Is planned that you have installed [yay](https://github.com/Jguer/yay.git)).
 
 ```
 yay -S i3 rofi dunst feh mpv picom neovim nemo cinnamon-translations network-manager-applet blueman xss-lock ttf-fira-code nerd-fonts-fira-code python python-pip pacman-contrib brightnessctl acpi pulseaudio alsa polkit polkit-gnome
