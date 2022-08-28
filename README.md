@@ -40,3 +40,9 @@ To uninstall the config you can simpy run the uninstall.sh script, it will remov
 ```
 ./uninstall.sh
 ```
+
+## Screenshots
+
+![Screenshot1](screenshots/screenshot1.png)
+![Screenshot2](screenshots/screenshot2.png)
+![Screenshot3](screenshots/screenshot3.png)
