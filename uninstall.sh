@@ -3,7 +3,7 @@
 #WARNING DO NOT EXECUTE THIS FILE IF YOU DON'T HAVE
 #INSTALLED THE DOTFILES
 
-if [-d "backupfiles"]; then
+if [ -d "backupfiles" ]; then
 
     echo "Removing themes and system files..."
     sudo rm -rf /usr/share/themes/Graphite-Dark-compact
