@@ -71,7 +71,7 @@ git clone https://github.com/vinceliuice/Tela-icon-theme.git
 
 echo "installing graphite gtk theme..."
 cd Graphite-gtk-theme
-sudo ./install.sh --tweaks rimless black
+sudo ./install.sh -s compact --tweaks rimless black
 cd ..
 
 echo "installing graphite cursors..."
