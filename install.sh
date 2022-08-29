@@ -69,6 +69,9 @@ git clone https://github.com/vinceliuice/Graphite-gtk-theme.git
 git clone https://github.com/vinceliuice/Graphite-cursors.git
 git clone https://github.com/vinceliuice/Tela-icon-theme.git
 
+echo "appling modification of graphite-gtk-theme..."
+cp -rf themes-files/Graphite-gtk-theme .
+
 echo "installing graphite gtk theme..."
 cd Graphite-gtk-theme
 sudo ./install.sh -s compact --tweaks rimless black
@@ -84,8 +87,19 @@ cd Tela-icon-theme
 sudo ./install.sh grey
 cd ..
 
+echo "installing nvim onedark theme..."
+
+if [ -d ~/.local/share/nvim/plugged ]; then
+    mkdir -p ~/.local/share/nvim/plugged
+fi
+
+git clone https://github.com/navarasu/onedark.nvim.git ~/.local/share/nvim/plugged
+cp -rf themes-files/onedark.nvim ~/.local/share/nvim/plugged
+
 #installation phase
 echo "copyng rice files..."
 sudo cp -rf system-files/* /
 cp -rf user-files/. ~/
+
+echo "appling "
 echo "installation complete now reboot or logout"
