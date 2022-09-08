@@ -190,7 +190,7 @@ for_window [class=".*"] border pixel 3
 #border_radius 3
 
 # set the wallapper
-exec_always feh --bg-fill ~/.local/share/backgrounds/wave-dark-arch.png
+exec_always feh --bg-fill ~/.local/share/backgrounds/wave-dark-arch-darker.png
 
 #setting gaps
 #smart_gaps on
