@@ -14,14 +14,14 @@
 window {
     background-color: @background;
     border:           3;
-    border-radius:    3;
+    //border-radius:    3;
     padding:          5;
     width:            600;
     height:           380;
     location: north west;
     x-offset:   6px;        
     y-offset:   28px;
-    transparency: "screenshot";
+    //transparency: "screenshot";
 }
 
 mainbox {

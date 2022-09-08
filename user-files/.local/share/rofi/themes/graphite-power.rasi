@@ -14,7 +14,7 @@
 window {
     background-color: @background;
     border:           3;
-    border-radius:    3;
+    //border-radius:    3;
     padding:          5;
     width:            300;
     height:           172;

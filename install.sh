@@ -4,13 +4,13 @@
 dunst=~/.config/dunst
 feh=~/.config/feh
 i3=~/.config/i3
-i3blocks=~/.config/i3blocks
 mpv=~/.config/mpv
 nvim=~/.config/nvim
 picom=~/.config/picom
 gtk3=~/.config/gtk-3.0
 gtk4=~/.config/gtk-4.0
 gtk2=~/.gtkrc-2.0
+polybar=~/.config/polybar
 
 #creating backupfiles directory
 mkdir -p backupfiles/user/.local/share
@@ -30,10 +30,6 @@ fi
 
 if [ -d "$i3" ]; then
     cp -rf ~/.config/i3 backupfiles/user/.config
-fi
-
-if [ -d "$i3blocks" ]; then
-    cp -rf ~/.config/i3blocks backupfiles/user/.config
 fi
 
 if [ -d "$mpv" ]; then
@@ -58,6 +54,10 @@ fi
 
 if [ -f "$gtk2" ]; then
     cp -rf ~/.gtkrc-2.0 backupfiles/user
+fi
+
+if [ -f "$polybar" ]; then
+    cp -rf ~/.config/polybar backupfiles/user/.config
 fi
 
 cp -rf /etc/systemd/logind.conf backupfiles/system/etc/systemd

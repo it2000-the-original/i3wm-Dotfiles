@@ -26,7 +26,7 @@ if [ -d "backupfiles" ]; then
     rm -rf ~/.config/dunst
     rm -rf ~/.config/feh
     rm -rf ~/.config/i3
-    rm -rf ~/.config/i3blocks
+    rm -rf ~/.config/polybar
     rm -rf ~/.config/mpv
     rm -rf ~/.config/nvim
     rm -rf ~/.config/picom

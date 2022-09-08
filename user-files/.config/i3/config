@@ -114,14 +114,14 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1  Control"
-set $ws2 "2  Browser"
-set $ws3 "3  Code"
-set $ws4 "4  Other"
-set $ws5 "5  Other"
-set $ws6 "6  Other"
-set $ws7 "7  Other"
-set $ws8 "8  Other"
+set $ws1 "1 Control"
+set $ws2 "2 Browser"
+set $ws3 "3 Code"
+set $ws4 "4 Other"
+set $ws5 "5 Other"
+set $ws6 "6 Other"
+set $ws7 "7 Other"
+set $ws8 "8 Other"
 set $ws9 "9"
 set $ws10 "10"
 
@@ -220,26 +220,6 @@ set $separator #ffffff
 set $focusedbg #1d1d1d
 set $unfocusedbg #121212
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-        status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
-        position top
-        #mode hide
-        
-        colors {
-                background $barbg
-                #statusline #ffffff
-                separator $separator
-
-                focused_workspace  $focusedbg $focusedbg #ffffff
-                active_workspace   $focusedbg $focusedbg #ffffff
-                inactive_workspace $barbg $barbg #888888
-                urgent_workspace   $barbg $barbg #888888
-                binding_mode       #2f343a #900000 #ffffff
-    }
-}
-
 #executing applets
 exec --no-startup-id blueman-applet
 
@@ -260,9 +240,14 @@ bindsym XF86MonBrightnessUp exec brightnessctl set 5%+ && pkill -RTMIN+1 i3block
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%- && pkill -RTMIN+1 i3blocks
 
 #startup
-exec picom
 exec ~/.config/i3/scripts/batterywarning
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 #set power button
 bindsym XF86PowerOff exec rofi -show powermenu -modi powermenu:~/.config/i3/scripts/rofi-power-menu -font "FiraCode Nerd Font Medium 9" -theme ~/.local/share/rofi/themes/graphite-power.rasi
+
+#picom launch
+exec_always --no-startup-id picom -f
+
+#polybar launch
+exec_always --no-startup-id ~/.config/i3/scripts/polybar-launch

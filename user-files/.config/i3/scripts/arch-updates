@@ -1,0 +1,10 @@
+#!/bin/bash
+
+updates=$(checkupdates | wc -l)
+
+if [ $updates -ge 1 ]; then
+    echo $updates
+else
+    echo $updates
+    exit 1
+fi

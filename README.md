@@ -12,7 +12,6 @@ this repository include configurations for:
 * [dunst](https://github.com/dunst-project/dunst) as notification daemon with the same color and border radius of rofi
 * [feh](https://github.com/derf/feh) as default image viewer with a custom .desktop file il .local/share/applications that launch the applicatin with custom options for example to hab the same color of the theme as background color
 * [mpv](https://github.com/mpv-player/mpv) with a simple config option to don't close the player when a video end
-* [i3bloks](https://github.com/vivien/i3blocks) to have on the status bar an update indicator for arch, a battery status block, a brightness indicator (You can change the brightness with functional keys in the keyboard like for the volume), a volume indicator, a calendar and a clock
 * [picom](https://github.com/yshui/picom) to have rounded corners and a shadow under the windows
 * [neovim](https://github.com/neovim/neovim) with vim-plug (You need to run :PlugInstall to install all plugins) and with [onedark](https://github.com/navarasu/onedark.nvim) colorscheme modfied with a custom color variant called graphite to the same colors of the theme
 * [nemo](https://github.com/linuxmint/nemo) as default file manager assigned to the first workspace
@@ -22,8 +21,7 @@ this repository include configurations for:
 You need to install the dependency packages to install this config (Is planned that you have installed [yay](https://github.com/Jguer/yay.git)).
 
 ```
-yay -S i3 rofi dunst feh mpv picom neovim nemo cinnamon-translations network-manager-applet blueman xss-lock ttf-fira-code nerd-fonts-fira-code python python-pip pacman-contrib brightnessctl acpi pulseaudio alsa polkit polkit-gnome
-pip install pynvim
+yay -S i3 rofi dunst feh mpv picom neovim nemo cinnamon-translations network-manager-applet blueman xss-lock ttf-fira-code nerd-fonts-fira-code python python-pip pacman-contrib brightnessctl acpi pulseaudio alsa polkit polkit-gnome polybar
 ```
 
 ## Installation
