@@ -1,10 +1,23 @@
-#!/bin/bash
+#!/usr/bin/env python3
 
-updates=$(checkupdates | wc -l)
+import subprocess
+from subprocess import check_output
 
-if [ $updates -ge 1 ]; then
-    echo $updates
-else
-    echo $updates
-    exit 1
-fi
+def getUpdates():
+
+    try:
+        global output
+        output = check_output(['checkupdates'], stderr=subprocess.STDOUT).decode('utf-8')
+        return True
+
+    except subprocess.CalledProcessError as exc:
+        if exc.returncode == 2 and not exc.output: 
+            print("%{F#ff0} up to date%{F-}")
+        else: 
+            print("%{F#888} unavaiable%{F-}")
+        return False
+
+if getUpdates():
+
+    updatesNumber = len(output.split("\n")) - 1
+    print(f"%{{F#ff0}} {updatesNumber}%{{F-}}")
